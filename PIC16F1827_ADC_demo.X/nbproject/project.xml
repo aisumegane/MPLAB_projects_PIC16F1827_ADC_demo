@@ -6,7 +6,7 @@
             <name>PIC16F1827_ADC_demo</name>
             <creation-uuid>8eea96ee-9355-4138-b6bd-db671767ce09</creation-uuid>
             <make-project-type>0</make-project-type>
-            <sourceEncoding>Shift_JIS</sourceEncoding>
+            <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList/>
             <confList>
