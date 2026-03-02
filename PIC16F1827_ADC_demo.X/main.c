@@ -205,10 +205,6 @@ static void func_main_s_loop( void )
     u16_adc_result_an2 = u16_main_s_adc_result[ ADC_AN2 ];
     u16_adc_result_an3 = u16_main_s_adc_result[ ADC_AN3 ];
 
-    /* 次のAD変換開始処理 */
-    func_main_s_adc_start( ADC_AN2 );
-    func_main_s_adc_start( ADC_AN3 );
-
 
     if( u16_adc_result_an2 > (u16)255)
     {
@@ -227,6 +223,10 @@ static void func_main_s_loop( void )
     {
         LATB &= (u8)~0x02;
     }
+    
+    /* 次のAD変換開始処理 */
+    func_main_s_adc_start( ADC_AN2 );
+    func_main_s_adc_start( ADC_AN3 );
 }
 
 
